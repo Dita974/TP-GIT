@@ -10,14 +10,23 @@
 <!-- Méthode n°2 : -->
 
 <?php
-function mb_strrev($str){
-    $r = '';
-    for ($i = mb_strlen($str); $i>=0; $i--) {
-        $r .= mb_substr($str, $i, 1);
-    }
-    return $r;
-}
+// function mb_strrev($string){
+//     $result = '';
+//     for ($i = 0; $i>= mb_strlen($string); $i++) {
+//          $result += mb_substr($string, $i, +1);
+//     }
+//     return $result;
+// }
 
-echo mb_strrev("J'adoooore les bouchons !"); 
+// echo mb_strrev("J'adoooore les bouchons !"); 
+// -----------------------------------------------//
+
+$string = "J'adore Paris, un jour j'y inviterais Cunégonde !";
+    for ($i = (strlen ($string) - 1); $i >= 0; $i--) {
+        echo $string[$i];
+    }
+
+    echo "\n";
+
 ?>
     
