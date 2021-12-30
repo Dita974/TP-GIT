@@ -18,6 +18,6 @@ function mb_strrev($str){
     return $r;
 }
 
-echo mb_strrev("J'adoooore les sushis !"); 
+echo mb_strrev("J'adoooore les bouchons !"); 
 ?>
     
